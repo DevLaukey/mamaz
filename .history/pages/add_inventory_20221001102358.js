@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 import { supabaseClient } from "../utils/supabase-client";
 
-const AddInventory = () => {
+const add_inventory = () => {
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
   const [categories, setCategories] = useState([]);
@@ -204,4 +204,4 @@ const AddInventory = () => {
   );
 };
 
-export default AddInventory;
+export default add_inventory;
