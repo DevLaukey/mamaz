@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "react-toastify/dist/ReactToastify.css";
 import { toast, ToastContainer } from "react-toastify";
-import { supabaseClient } from "../utils/supabase-client"
+import { supabaseClient } from "../utils/supabase-client";
 import { useRouter } from "next/router";
 
 
@@ -23,7 +23,7 @@ const SignIn = () => {
         throw error;
       }
       if (user) {
-        router.push("/add_inventory");
+        router.push("/add_invetory");
       }
     } catch (error) {
       console.log("object");

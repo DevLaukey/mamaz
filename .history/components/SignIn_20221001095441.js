@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "react-toastify/dist/ReactToastify.css";
 import { toast, ToastContainer } from "react-toastify";
-import { supabaseClient } from "../utils/supabase-client"
+import { supabaseClient } from "./utils/supabase-client";
 import { useRouter } from "next/router";
 
 

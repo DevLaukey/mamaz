@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "react-toastify/dist/ReactToastify.css";
 import { toast, ToastContainer } from "react-toastify";
-import { supabaseClient } from "../utils/supabase-client"
+import { supabaseClient } from "../utils/supabase-client";
 import { useRouter } from "next/router";
 
 
@@ -23,7 +23,7 @@ const SignIn = () => {
         throw error;
       }
       if (user) {
-        router.push("/add_inventory");
+        router.push("/admin");
       }
     } catch (error) {
       console.log("object");
@@ -77,7 +77,7 @@ const SignIn = () => {
             <div className="flex items-center justify-between">
               <button
                 onClick={signIn}
-                className="bg-primary hover:bg-black hover:text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                className="bg-primary hover:bg-black  font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                 type="button"
               >
                 Sign In
