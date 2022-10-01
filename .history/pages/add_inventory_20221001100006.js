@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Select from "react-select";
 import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-
 import { supabaseClient } from "../utils/supabase-client";
 
 const add_inventory = () => {
@@ -183,7 +181,7 @@ const add_inventory = () => {
             <div className="flex items-center justify-between mt-4">
               <button
                 onClick={addItem}
-                className="bg-primary hover:bg-black hover:text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                className="bg-primary hover:bg-black text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                 type="button"
               >
                 Add Item
